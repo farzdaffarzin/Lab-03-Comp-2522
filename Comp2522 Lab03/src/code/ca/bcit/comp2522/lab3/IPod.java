@@ -5,7 +5,7 @@ package ca.bcit.comp2522.lab3;
  *
  * @author Farzad Farzin
  * @author Anil Bronson
- * @author Dilraj Bains
+ * @author Dalraj Bains
  * @version 1.0
  */
 public class IPod extends IDevice {
