@@ -32,4 +32,17 @@ public abstract class IDevice {
    * print detail method which will be accessible to the child classes later
    */
   public abstract void printDetails();
+
+  /**
+   * equal method that get the equal phones, ipod and ipad
+   */
+  @Override
+  public abstract boolean equals(Object obj);
+
+  /**
+   * hashcode used for each class
+   * @return hashcode
+   */
+  @Override
+  public abstract int hashCode();
 }
