@@ -8,9 +8,28 @@ package ca.bcit.comp2522.lab3;
  * </p>
  *
  * @author Farzad Farzin
- * @author
- * @author
+ * @author Anil Bronson
+ * @author Dilraj Bains
  * @version 1.0
  */
-public class IDevice {
+public abstract class IDevice {
+
+  private final String purpose;
+
+  public IDevice(final String purpose) {
+    this.purpose = purpose;
+  }
+
+  /**
+   * getter for the purpose and making it accessible for the child classes
+   * @return purpose
+   */
+  public String getPurpose() {
+    return purpose;
+  }
+
+  /**
+   * print detail method which will be accessible to the child classes later
+   */
+  public abstract void printDetails();
 }
