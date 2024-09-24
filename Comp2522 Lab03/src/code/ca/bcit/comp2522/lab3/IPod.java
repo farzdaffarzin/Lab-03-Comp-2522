@@ -12,7 +12,7 @@ public class IPod extends IDevice {
   private int numberofSongs;
   private double maxVolumeDecibels;
 
-  public IPod(final String purpose, final int numberofSongs,
+  public IPod(final int numberofSongs,
               final double maximumVolumeDecibels) {
     super("music");
     this.numberofSongs = numberofSongs;
