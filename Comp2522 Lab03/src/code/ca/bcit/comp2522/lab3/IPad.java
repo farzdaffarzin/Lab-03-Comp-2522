@@ -5,6 +5,11 @@ import java.util.Objects;
 /**
  * The IPad class represents a type of IDevice with additional properties
  * such as whether it has a case and the operating system it runs.
+ *
+ * @author Farzad Farzin
+ * @author Anil Bronson
+ * @author Dalraj Bains
+ * @version 1.0
  */
 public class IPad extends IDevice {
 
@@ -21,7 +26,7 @@ public class IPad extends IDevice {
      * @param hasCase boolean indicating if the iPad has a case
      * @param OperatingSystem the operating system of the iPad
      */
-    public IPad(boolean hasCase, String OperatingSystem) {
+    public IPad(final boolean hasCase,final String OperatingSystem) {
         super("learning");  // Calls the superclass constructor with "learning" as the purpose
         this.hasCase = hasCase;
         this.OperatingSystem = OperatingSystem;
@@ -33,7 +38,7 @@ public class IPad extends IDevice {
      */
     @Override
     public void printDetails() {
-        String format;
+        final String format;
         // Checks if the iPad has a case and prints the appropriate message
         if (hasCase) {
             format = String.format("The iPad has a case and is running %s", OperatingSystem);
@@ -52,7 +57,7 @@ public class IPad extends IDevice {
      * @return true if the operating systems match, false otherwise
      */
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(final Object obj) {
         if (obj == null) {
             return false;
         }

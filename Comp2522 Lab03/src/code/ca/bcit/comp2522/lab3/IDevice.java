@@ -37,7 +37,7 @@ public abstract class IDevice {
    * equal method that get the equal phones, ipod and ipad
    */
   @Override
-  public abstract boolean equals(Object obj);
+  public abstract boolean equals(final Object obj);
 
   /**
    * hashcode used for each class

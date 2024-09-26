@@ -21,8 +21,8 @@ public class IPhone extends IDevice {
    * @param minutesRemaining the number of minutes remaining on the phone plan
    * @param carrier the carrier of the phone
    */
-  public IPhone(double minutesRemaining,
-                String carrier) {
+  public IPhone(final double minutesRemaining,
+                final String carrier) {
 
     // Set the purpose of the device to "talking"
     super("talking");
@@ -62,7 +62,7 @@ public class IPhone extends IDevice {
    *
    * @param carrier the new carrier
    */
-  public void setCarrier(String carrier) {
+  public void setCarrier(final String carrier) {
     this.carrier = carrier;
   }
 
@@ -100,7 +100,7 @@ public class IPhone extends IDevice {
    * @return true if the objects are equal, false otherwise
    */
   @Override
-  public boolean equals(Object obj) {
+  public boolean equals(final Object obj) {
 
     if (this == obj) return true;
     if (obj == null || getClass() != obj.getClass()) return false;

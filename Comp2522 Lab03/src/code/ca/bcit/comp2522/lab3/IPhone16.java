@@ -25,7 +25,7 @@ public class IPhone16 extends IPhone {
    */
   public IPhone16(double minutesRemaining,
                   final String carrier,
-                  boolean highResolutionCamera,
+                  final boolean highResolutionCamera,
                   int gigabytesOfMemory) {
 
     // Call the parent constructor
@@ -107,7 +107,7 @@ public class IPhone16 extends IPhone {
    * @return true if the objects are equal, false otherwise
    */
   @Override
-  public boolean equals(Object obj) {
+  public boolean equals(final Object obj) {
 
     if (this == obj) return true;
     if (obj == null || getClass() != obj.getClass()) return false;
