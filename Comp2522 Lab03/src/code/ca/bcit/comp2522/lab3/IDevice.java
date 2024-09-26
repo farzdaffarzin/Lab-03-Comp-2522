@@ -16,6 +16,11 @@ public abstract class IDevice {
 
   private final String purpose;
 
+  /**
+   * Constructor to initialize the purpose of the device.
+   *
+   * @param purpose the purpose of the device
+   */
   public IDevice(final String purpose) {
     this.purpose = purpose;
   }
