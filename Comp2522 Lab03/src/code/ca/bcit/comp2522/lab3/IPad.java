@@ -14,7 +14,7 @@ import java.util.Objects;
 public class IPad extends IDevice {
 
     // A boolean to indicate if the iPad has a case.
-    private final boolean hasCase;
+    private final boolean withCase;
 
     // The operating system that the iPad runs.
     private final String OperatingSystem;
@@ -23,12 +23,12 @@ public class IPad extends IDevice {
      * Constructor for the IPad class.
      * Initializes the iPad with a specified case status and operating system.
      *
-     * @param hasCase boolean indicating if the iPad has a case
+     * @param withCase boolean indicating if the iPad has a case
      * @param OperatingSystem the operating system of the iPad
      */
-    public IPad(final boolean hasCase,final String OperatingSystem) {
+    public IPad(final boolean withCase, final String OperatingSystem) {
         super("learning");  // Calls the superclass constructor with "learning" as the purpose
-        this.hasCase = hasCase;
+        this.withCase = withCase;
         this.OperatingSystem = OperatingSystem;
     }
 
@@ -40,7 +40,7 @@ public class IPad extends IDevice {
     public void printDetails() {
         final String format;
         // Checks if the iPad has a case and prints the appropriate message
-        if (hasCase) {
+        if (withCase) {
             format = String.format("The iPad has a case and is running %s", OperatingSystem);
         } else {
             format = String.format("The iPad does not have a case and is running %s", OperatingSystem);
@@ -77,5 +77,9 @@ public class IPad extends IDevice {
     @Override
     public int hashCode() {
         return Objects.hashCode(OperatingSystem);
+    }
+
+    public boolean hasCase() {
+        return withCase;
     }
 }
